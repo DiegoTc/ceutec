@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Ceutec</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			table {
+			    font-family: arial, sans-serif;
+			    border-collapse: collapse;
+			    width: 100%;
+			}
+
+			td, th {
+			    border: 1px solid #dddddd;
+			    text-align: left;
+			    padding: 8px;
+			}
+
+			tr:nth-child(even) {
+			    background-color: #dddddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<section><h1>Variables y Funciones en Java</h1></section>
+					<section>
+		                     <h2>Objetivos</h2>
+			                     <ul>
+			                     	<li>Identificar los tipos de datos</li>
+			                        <li>Identificar los tipos de funciones</li>
+			                     </ul>
+		            </section>
+		            <section>
+		            		<h2>Criterios de Aceptacion</h2>
+		            			<ul>
+		            				<li>Poder crear variables y asignarles valores</li>
+		            				<li>Poder crear diferentes tipos de funciones </li>
+		            			</ul>
+		            </section>
+				</section>
+				<section>
+					<h2>Tipos de datos</h2>
+					<h3>Datos Primitivos</h3>
+					<p align="justify">
+						Un tipo de datos es un conjunto de valores y un conjunto de operaciones definidas en ellos. Por ejemplo, estamos familiarizados con los números y con las operaciones definidas en ellos, tales como la suma y la multiplicación. Existen ocho tipos diferentes de datos incorporados en Java, en su mayoría diferentes tipos de números. Utilizamos el tipo de sistema para cadenas de caractere (String) con tanta frecuencia que también lo consideramos aquí.
+					</p>
+
+				</section>
+
+				<section>
+					<section>
+						<table>
+						  <tr>
+						    <th>Nombre</th>
+						    <th>Tipo</th>
+						  </tr>
+						  <tr>
+						    <td>byte</td>
+						    <td>Entero</td>
+						  </tr>
+						  <tr>
+						    <td>short</td>
+						    <td>Entero</td>
+						  </tr>
+						  <tr>
+						    <td>int</td>
+						    <td>Entero</td>
+						  </tr>
+						  <tr>
+						    <td>long</td>
+						    <td>Entero</td>
+						  </tr>
+						  <tr>
+						    <td>float</td>
+						    <td>Decimal simple</td>
+						  </tr>
+						  <tr>
+						    <td>double</td>
+						    <td>Decimal doble</td>
+						  </tr>
+						  <tr>
+						    <td>char</td>
+						    <td>Caracter Simple</td>
+						  </tr>
+						  <tr>
+						    <td>boolean</td>
+						    <td>Valor True o False</td>
+						  </tr>
+						</table>
+					</section>
+					<section>
+						<h3>Enteros</h3>
+						<p align="justify">
+							Consiste en un numero entero entre −2<sup>31</sup>  and 2<sup>31</sup> − 1 &nbsp;
+(−2,147,483,648 to 2,147,483,647).
+						</p>
+						<pre><code data-trim data-noescape>
+							int a,b,c;
+							a= 10;
+							b= -345;
+							c=456;
+						</code></pre>
+						<pre><code data-trim data-noescape>
+							int a = 10;
+							int b = -345;
+							int c = 456;
+						</code></pre>
+					</section>
+					<section>
+						<h3>Caracteres</h3>
+						<p align="justify">
+							Los caracteres son simbolos alfanumericos. Generalmente se utilizan para asignar valores.
+						</p>
+						<pre><code data-trim data noescape>
+							char ch = 'a';
+							char ab;
+							ab = 'b'
+						</code></pre>
+						<pre><code data-trim data noescape>
+							String a, b, c;
+							a = "Hello,";
+							b = " Bob";
+							c = a + b;
+						</code></pre>
+					</section>
+					<section>
+						<h3>Decimal/Flotante</h3>
+						<p align="justify">
+							El tipo double es para representar números flotante, por ejemplo, para uso en aplicaciones científicas. La representación interna es como la notación científica, por lo que podemos calcular con números reales en un rango enorme. Podemos especificar un número flotante usando una cadena de dígitos con un punto decimal, por ejemplo, 3.14159 para una aproximación de seis dígitos a la constante matemática pi.
+						</p>
+						<pre><code data-trim data noescape>
+							double a = 5.68634567
+							float b = 6.34
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>Booleanos</h3>
+						<p align="justify">
+							Los tipos booleanos solo tienen 2 valores true o false
+						</p>
+						<pre><code data-trim data noescape>
+							boolean flag = true
+						</code></pre>
+					</section>
+
+				</section>
+
+				<section>
+					<section><h2>Metodos en Java</h2></section>
+					<section>
+						<p align="justify">
+							Existen dos tipos de metodos en Java.
+							<ul>
+								<li>Procedimientos (Void)</li>
+								<li>Funciones (Return)</li>
+						</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
