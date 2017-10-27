@@ -7,7 +7,7 @@ public class Asignacion{
 
         a=5;
         b=4;
-        a1 = 5;
+        a1 = 5.5;
         b1 = 4;
         sexo = 'F';
         nombre = "Anabel";
